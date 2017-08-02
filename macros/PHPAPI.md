@@ -31,8 +31,11 @@ php.h
 
 ##### gcc的visbility属性说明：
 1.当-fvisibility=hidden时
+
 动态库中的函数默认是被隐藏的即 hidden. 除非显示声明为__attribute__((visibility("default"))).
+
 2.当-fvisibility=default时
+
 动态库中的函数默认是可见的.除非显示声明为__attribute__((visibility("hidden"))).
 
 参考文章:[ GCC系列: __attribute__((visibility("")))](http://blog.csdn.net/veryitman/article/details/46756683)
